@@ -6,7 +6,7 @@
     min-height:100vh;
     background-attachment:fixed;
     background-color: #2D3134;
-    padding-top:50vh;
+    padding-top:45vh;
     margin:0;
 }
 
@@ -43,3 +43,4 @@
         background: orange;
         color:white!important;
     }
+
