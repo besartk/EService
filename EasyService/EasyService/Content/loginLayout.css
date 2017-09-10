@@ -9,3 +9,37 @@
     padding-top:50vh;
     margin:0;
 }
+
+.btnLogin {
+    border: 3px solid lightgray;
+    margin-bottom: 15px;
+    background: #2D3134;
+    color: gray!important;
+    border-radius: 14px;
+    text-align: center;
+    padding: 14px;
+    padding-left:21px;
+    padding-right:21px;
+}
+    .btnLogin:hover {
+        border: 3px solid lightgray;
+        background: lightgray;
+        color: white !important;
+    }
+
+
+.btnSignup {
+    border: 3px solid orange;
+    margin-bottom: 15px;
+    background: #2D3134;
+    color: orange!important;
+    border-radius: 14px;
+    text-align:center;
+    padding:14px;
+    
+}
+    .btnSignup:hover {
+        border: 3px solid orange;
+        background: orange;
+        color:white!important;
+    }
