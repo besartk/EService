@@ -14,23 +14,24 @@
         <link href="~/Content/loginLayout.css" rel="stylesheet" />
 
 </head>
-<body class="container">
-    <div class="col-md-2  text-center navLeft">
-           <div class="col-md-12" style="margin-bottom="10px">
-               <button type="button" class="btn btn-outline-primary btn-lg">Log in</button>
-           </div>
-            <div class="col-md-12">
-                <button type="button" class="btn btn-outline-warning btn-lg">Sign Up</button>
+<body style="margin:0 auto; padding-top:0; ">
+    <div class="container" style="background:white;padding-left:0!important; margin-bottom:-20px;">
+        <div class="row col-md-2 text-center navLeft" style="margin:0; padding-left:0!important;">
+            <div class="row">
+                <div class="row">
+                    <button type="button" class="btn btn-outline-primary btn-lg">Log in</button>
+                </div>
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-outline-warning btn-lg">Sign Up</button>
+                </div>
             </div>
+        </div>
+
+        <div class="col-md-10" style="background:white">
+            @RenderBody()
+            <hr />
+        </div>
     </div>
-
-    <div class="col-md-10">
-        @RenderBody()
-        <hr />
-       
-
-    </div>
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
