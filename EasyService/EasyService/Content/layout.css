@@ -1,0 +1,60 @@
+﻿body {
+    background: #BAC8D1;
+}
+
+.navLeft {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-color: #2D3134;
+    padding-top: 0vh;
+    margin: 0;
+
+}
+
+
+.upText {
+    height: 8vh;
+    background: #31383E;
+    padding:8%;
+    margin-bottom: 20vh;
+    margin-left:15px; 
+    text-align:center;
+}
+
+    .upText p {
+        font-size: 20px;
+        color: whitesmoke;
+        font-weight: 400;
+    }
+
+
+.listat {
+    height:40vh;
+    border:px solid red;
+    padding:25px;
+}
+
+
+.listat ul li {
+    
+    font-size: 16px;
+    font-weight:400;
+    color: lightgray;
+    text-decoration: none;
+    margin-bottom: 7px;
+    text-align: left;
+}
+
+    .listat ul li a {
+        font-size: 14px;
+        color: lightgray;
+        font-weight:400;
+        text-decoration: none;
+        font-weight:400;
+    }
+    .listat ul li a:hover {
+        color:white;
+        background:gray;
+        width:100%;
+        text-align:left;
+    }

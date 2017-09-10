@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿
+@{
+    ViewBag.Title = "_loginLayout";
+}
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -6,37 +11,34 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/layout.css" rel="stylesheet" />
 
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
+<body style="margin:0 auto; padding-top:0; ">
+    <div class="container" style="background:white;padding-left:0!important; margin-bottom:-20px;">
+        <div class="row col-md-2 text-center navLeft" style="margin:0; padding-left:0!important;">
+            <div class="row text-center">
+               <div class="col-md-12 upText"><p>Smerrebred</p></div>
+                <div class="col-md-12 listat">
+                    <div class="row">
+                        <ul>
+                            <li><a class="btn" href="">Home</a></li>
+                            <li><a  class="btn" href="">About</a></li>
+                            <li><a  class="btn"href="">Contact</a></li>
+                            <li><a class="btn" href="">Viedos</a></li>
+                          
+                        </ul>
+                    </div>
+                </div>
+               
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
 
+        <div class="col-md-10" style="background:white">
+            @RenderBody()
+            <hr />
+        </div>
+    </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
